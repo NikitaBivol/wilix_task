@@ -10,14 +10,16 @@
 .button {
    /* проблемы с позиционированием */
    position: fixed;
-   left: 43%;
+   left: 50%;
    top: 50%;
+   transform: translateX(-50%) translateY(-50%);
    padding: 10px 60px;
    background-color: rgb(241, 241, 235);
    border: 0;
    border-radius: 2px;
    box-shadow: 0px 0px 15px 7px rgba(34, 60, 80, 0.2);
    transition: all 0.2s;
+   display: none;
 }
 
 .button:hover,
@@ -33,15 +35,21 @@
 /* button styles end */
 
 /* browser styles start */
-.browser {}
+.browser {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   width: 800px;
+   height: 600px;
+   background-color: #fff;
+   box-shadow: 0px 2px 20px rgb(17, 17, 17);
+   border-radius: 5px;
+   overflow: hidden;
+  }
 
 .browser__wrap {
-   max-width: 1000px;
-   background-color: #fff;
-   margin: 0 auto;
-   box-shadow: 0 px 2px 20px rgba(238, 238, 238, 0.158);
-   border-radius: 2px;
-   position: relative;
+   
 }
 
 .browser__header {
