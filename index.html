@@ -7,27 +7,24 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="/css/reset.css">
    <link rel="stylesheet" href="/css/style.css">
-   <title>Document</title>
+   <title>mini-browser</title>
 </head>
-
 <body>
-   <div class="background">
-      <!-- кнопку обернуть в ссылку? -->
+   <main class="content">
       <button type="button" class="button">Button</button>
       <!-- browser start -->
       <div class="browser">
             <div class="browser__header">
                <ul class="tools">
-                  <li class="tool"> <button type="button" class="close-button">&times;</button> </li>
-                  <li class="tool"> </li>
-                  <li class="tool"> </li>
+                  <li class="tool red close-button"></li>
+                  <li class="tool yellow"></li>
+                  <li class="tool green"></li>
                </ul>
             </div>
             <div class="browser__banner">
                <h1 class="heading"></h1>
                <p class="paragraf"> </p>
             </div>
-
             <div class="browser__cards">
                <section class="browser__card"></section>
                <section class="browser__card"></section>
@@ -35,9 +32,8 @@
                <section class="browser__card"></section>
             </div>
       </div>
-   </div>
+   </main>
    <!-- browser end -->
-
    <script src="/popup.js"></script>
 </body>
 
