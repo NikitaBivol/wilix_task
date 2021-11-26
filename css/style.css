@@ -1,3 +1,19 @@
+:root {
+   --bg:linear-gradient(150deg, rgb(241, 241, 119) 50%, rgb(226, 109, 109) 50%);
+   --shedow-stat: 0px 0px 15px 7px rgba(34, 60, 80, 0.2); 
+   --shedow-act: 0px 0px 5px 4px rgba(34, 60, 80, 0.2);
+   --btn-white: rgb(241, 241, 235);
+   --btn-blue: rgb(141, 203, 230);
+   --btn-deepblue: rgb(111, 187, 219);
+   --browser-bg: rgb(233, 230, 230);
+   --browser-grey: rgb(204, 203, 203);
+   --browser-deepgrey: rgb(150, 148, 148);
+   --red-tool: rgb(226, 17, 17);
+   --yellow-tool: rgb(255, 136, 0);
+   --green-tool: rgb(14, 112, 14);
+
+}
+
 html {
    box-sizing: border-box;
 }
@@ -12,7 +28,7 @@ html {
    width: 100%;
    height: 100%;
    position: absolute;
-   background-image: linear-gradient(150deg, rgb(241, 241, 119) 50%, rgb(226, 109, 109) 50%);
+   background-image: var(--bg);
 }
 
 /* button styles start */
@@ -23,22 +39,22 @@ html {
    top: 50%;
    transform: translateX(-50%) translateY(-50%);
    padding: 10px 60px;
-   background-color: rgb(241, 241, 235);
+   background-color: var(--btn-white);
    border: 0;
    border-radius: 2px;
-   box-shadow: 0px 0px 15px 7px rgba(34, 60, 80, 0.2);
+   box-shadow: var(--shedow-stat);
    transition: all 0.2s;
 
 }
 
 .button:hover,
 :visited {
-   background-color: rgb(141, 203, 230);
+   background-color: var(--btn-blue);
 }
 
 .button:active {
-   background-color: rgb(111, 187, 219);
-   box-shadow: 0px 0px 5px 4px rgba(34, 60, 80, 0.2);
+   background-color:var(--btn-deepblue);
+   box-shadow: var(--shedow-act);
 }
 
 /* button styles end */
@@ -52,7 +68,7 @@ html {
    width: 900px;
    height: 600px;
    background-color: #fff;
-   box-shadow: 0px 0px 15px 7px rgba(34, 60, 80, 0.2);
+   box-shadow: var(--shedow-stat);
    border-radius: 7px;
    overflow: hidden;
    display: none;
@@ -68,10 +84,10 @@ html {
    height: 40px;
    padding: 0;
    margin-bottom: 0;
-   position: absolute;
+   position: relative;
    top: 0;
    left: 0;
-   background-color: rgb(233, 230, 230);
+   background-color: var(--browser-bg);
 }
 
 .tools {
@@ -93,16 +109,16 @@ html {
 }
 
 .red{
-   background-color: rgb(226, 17, 17);
+   background-color: var(--red-tool);
    cursor: pointer;
 }
 
 .yellow {
-   background-color: rgb(255, 136, 0);
+   background-color: var(--yellow-tool);
 }
 
 .green {
-   background-color: rgb(14, 112, 14) ;
+   background-color: var(--green-tool) ;
 }
 
 .browser__banner {
@@ -110,16 +126,23 @@ html {
    height: 280px;
    padding: ;
    margin: 40 auto;
-   background-color: rgb(204, 203, 203)
+   background-color: var(--browser-grey);
 }
 
 .heading {
-   width: 40px;
-   height: 10px;
-   background-color: rgb(110, 109, 109)
+   
+   width: 180px;
+   height: 30px;
+   margin: 0 auto;
+   background-color: var(--browser-deepgrey);
 }
 
-.paragraf {}
+.paragraf {
+   width: 70px;
+   height: 30px;
+   margin: 10px auto;
+   background-color: var(--browser-deepgrey);
+}
 
 .browser__cards {
    height: 300px;
@@ -132,9 +155,22 @@ html {
 .browser__card {
    width: 150px;
    height: 150px;
-   background-color: rgb(204, 203, 203);
+   background-color: var(--browser-grey);
    margin: 10px;
    padding: 10px 10px;
 }
 
+.browser__card-desc{
+   width: 15px;
+   height: 10px;
+   background-color: var(--browser-grey);
+}
 /* browser styles end */
+
+/* Media start */
+
+
+
+
+/* Media end */
+
